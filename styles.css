@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    align-content: center;
+    background-color: hsl(216, 20%, 16%);
+    color: #fff;
+}
+@keyframes rotate {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+figure img{
+    position: relative;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.container {
+    animation-name: rotate;
+    animation-duration: 1s;
+    margin:auto;
+    padding: 1.5rem;
+    background-color: hsl(216, 50%, 46%);
+    border-radius: 1rem;
+}
+.name h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 0px;
+}
+.description p{
+    color: rgb(60, 60, 120);
+    margin: 2rem 0 2rem 0;
+    font-size: 20px;
+}
+.price ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+} 
+.price .ethereum {
+    color: hsl(150, 70%, 80%);
+    font-weight: bold;
+}
+.price .clock {
+    color: rgb(60, 60, 120);
+    font-weight: bold;
+}
+@media (min-width: 400px){
+    .container{
+        width: 375px;
+        margin: 4rem auto 1.5rem;
+    }
+
+.creator {
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+    color: rgb(60, 60, 120);
+    vertical-align: middle;
+    font-weight: bold;
+}
+span {
+    color: #fff;
+    font-weight: 600px;
+    font-style: bold;
+}
+.creator p img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
